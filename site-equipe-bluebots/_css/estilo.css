@@ -1,0 +1,94 @@
+@charset "UTF-8";
+	body{
+	background-color: #191970;
+	background-image: url("_imagens/fundo.png");
+	}
+	
+	p{
+		font-family: Cambria Math;
+		font-size: 12pt;
+		text-align: justify;
+		text-indent: 50px;
+		color: white;
+	}
+	
+	h1{
+		font-family: Cambria Math;
+		font-size: 21pt;
+		color: #4169E1;
+		text-shadow: 1px 1px 1px black;
+	}
+	
+	h2{
+		font-family: Cambria Math;
+		font-size: 17pt;
+		color: #1E90FF;
+		text-shadow: 1px 1px 1px black;
+	}
+	
+	h3{
+		font-family: Cambria Math;
+		font-size: 15pt;
+		color: #FFD700;
+		text-shadow: 1px 1px 1px black;
+	}
+	
+	li{
+		font-family: Cambria Math;
+		font-size: 12pt;
+		color: white;
+	}
+
+/* Formatação de imagens com legendas */
+
+figure.foto-legenda {
+	position: relative; /* figcaption é um objeto-filho */
+	border: 5px solid #191970;
+	box-shadow: 1px 1px 4px white; /* deslocamento horizontal, deslocamento vertical, espalhamento, cor */
+}
+
+figure.foto-legenda img { /* formatação de tudo o que for do tipo img */
+	width: 20%;
+	height: 20%;
+}
+
+figure.foto-legenda figcaption { /* formatação de tudo o que for do tipo figcaption */
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,.5);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 10px; /* cria um deslocamento do figcaption */
+	box-sizing: border-box; /* cria um box dentro da borda */
+	transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption{
+	opacity: 1; /* classe específica para quando se passar o mouse por cima de um objeto (no caso, figcaption)*/
+}
+
+/* Formatação de menu */
+	nav#menu{
+		display: block;
+	}
+	
+	nav#menu ul{
+		list-style: none;
+		text-transform: uppercase;
+		position: absolute;
+		top: -20px;
+		left: 300px;
+	}
+	
+	nav#menu li{
+		display: inline-block;
+		background-color: #4169E1;
+		padding: 10px;
+		margin: 2px;
+	}
+	
+	nav#menu h1{
+		display: none;
+	}
